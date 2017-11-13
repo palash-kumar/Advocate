@@ -214,6 +214,11 @@ p{
 .modal{
     padding-right: 0 !important;
 }
+.modal-content {
+    background: url("../images/modal_1.jpg") no-repeat;
+    -webkit-background-size:cover;
+    background-size:cover;
+}
 .modal-dialog {
     width: 100%;
     height: 100%;
