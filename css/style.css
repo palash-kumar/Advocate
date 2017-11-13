@@ -43,17 +43,17 @@
 
 /*Header Section Star*/
 /*#header:after{*/
-    /*position:absolute;*/
-    /*width: 0;*/
-    /*height: 0;*/
-    /*border-left: 700px solid transparent;*/
-    /*border-right: 700px solid transparent;*/
-    /*content: '';*/
-    /*border-top: 50px solid red;*/
-    /*top: 100%;*/
-    /*left: 50%;*/
-    /*transform: translateX(-50%);*/
-    /*margin: -850px 0;*/
+/*position:absolute;*/
+/*width: 0;*/
+/*height: 0;*/
+/*border-left: 700px solid transparent;*/
+/*border-right: 700px solid transparent;*/
+/*content: '';*/
+/*border-top: 50px solid red;*/
+/*top: 100%;*/
+/*left: 50%;*/
+/*transform: translateX(-50%);*/
+/*margin: -850px 0;*/
 /*}*/
 /*Header Section End*/
 
@@ -86,10 +86,10 @@
     background-color: transparent;
     border: none;
 }
-    .card > img{
-        max-height: 250px;
-        max-width: 250px;
-    }
+.card > img{
+    max-height: 250px;
+    max-width: 250px;
+}
 .trainer{
     width: 30%;
     height: 30%;
@@ -117,15 +117,18 @@
     .arrow-img{
         margin: -40px 0;
     }
+    .trainer{
+        width: 25%;
+        /*height: 80%;*/
+    }
 }
 @media (min-width: 1000px) {
     .arrow-img{
         margin: -74px 0;
     }
 }
-@media (min-width: 1280px max-height:960px) {
+@media (min-width: 1280px) {
     .arrow-img{
-        margin: -55px 0;
+        margin: -50px 0;
     }
 }
-
