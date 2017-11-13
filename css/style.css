@@ -11,19 +11,18 @@
 }
 
 #content{
-    /*margin: 80px 0;*/
+
 }
 #director{
-    /*margin: 40px 0;*/
+
 }
 #chart{
-    background: url("../images/content_2.jpg") no-repeat;
-    background-size: cover;
-    padding: 80px 0;
+
 }
 #contactUs{
     background-color: #003663;
-    padding: 80px 0;
+    padding: 120px 0;
+    color: #ffffff;
 }
 #contactUs h1, #contactUs p{
     color: #ffffff;
@@ -31,44 +30,30 @@
 
 .arrow-img{
     width: 100%;
-    max-height: 15%;
+    max-height: 20%;
     position: absolute;
     z-index: 100;
     margin: -73px 0;
 }
-.chart-padding{
-    padding: 120px 0;
-}
 /*Section Styling End*/
-
-/*Header Section Star*/
-/*#header:after{*/
-/*position:absolute;*/
-/*width: 0;*/
-/*height: 0;*/
-/*border-left: 700px solid transparent;*/
-/*border-right: 700px solid transparent;*/
-/*content: '';*/
-/*border-top: 50px solid red;*/
-/*top: 100%;*/
-/*left: 50%;*/
-/*transform: translateX(-50%);*/
-/*margin: -850px 0;*/
-/*}*/
-/*Header Section End*/
 
 /*Content Section Start*/
 .content-top{
     background: url("../images/content_1.jpg") no-repeat;
     -webkit-background-size:100% 100%;
     background-size:100% 100%;
-    padding: 80px 0;
+    padding: 300px 0;
+    /*height: 600px;*/
+}
+.shade{
+    background-color: rgba(20, 20, 20, 0.7);
 }
 .content-below{
     background: url("../images/content_2.jpg") no-repeat;
     -webkit-background-size:100% 100%;
     background-size:100% 100%;
-    padding: 80px 0;
+    padding: 300px 0;
+    /*height: 600px;*/
 }
 /*Content Section End*/
 /*Director Section Start*/
@@ -76,23 +61,42 @@
     background: url("../images/Director_3_Slide.jpg") no-repeat;
     -webkit-background-size:100% 100%;
     background-size:100% 100%;
-    padding: 120px 0;
+    padding: 300px 0;
+    /*height: 600px;*/
 }
+
 /*Director Section End*/
 /*Chart Section Start*/
+.chart-padding{
+    padding: 120px 0;
+    /*margin-top: 40px;*/
+    z-index: 100;
+}
+.chart-top{
+    background: url("../images/Director_chart_1_Slide.jpg") no-repeat;
+    -webkit-background-size:100% 100%;
+    background-size:100% 100%;
+    padding: 300px 0;
+}
+
+.chart-bottom{
+    background: url("../images/content_2.jpg") no-repeat;
+    background-size: cover;
+}
 .card{
     max-width: 300px;
-    margin: 20px 0;
+    margin: auto;
     background-color: transparent;
     border: none;
 }
 .card > img{
-    max-height: 250px;
-    max-width: 250px;
+    max-height: 200px;
+    max-width: 200px;
+    margin: auto;
 }
 .trainer{
-    width: 30%;
-    height: 30%;
+    width: 40%;
+    height: 40%;
 }
 /*Chart Section End*/
 @media (min-width: 320px) {
@@ -106,21 +110,56 @@
         padding: 95px 0;
     }
     #chart .arrow-img{
-        margin: 0;
+        margin: -35px 0;
     }
     .trainer{
         width: 100%;
         height: 100%;
     }
+    .content-top{
+        height: auto;
+        padding: 50px 10px;
+    }
+    .content-below{
+        height: auto;
+        padding: 50px 10px;
+    }
+    /*Content Section End*/
+    /*Director Section Start*/
+    .director-content{
+        height: auto;
+        padding: 50px 10px;
+    }
+    .chart-top{
+        padding: 100px 0;
+    }
+    .chart-bottom{
+        padding: 100px 0;
+    }
 }
 @media (min-width: 800px) {
     .arrow-img{
-        margin: -40px 0;
+        margin: -50px 0;
     }
     .trainer{
         width: 25%;
         /*height: 80%;*/
     }
+    .content-top{
+        padding: 100px 0;
+        height: auto;
+    }
+    .content-below{
+        padding: 100px 0;
+        height: auto;
+    }
+    /*Content Section End*/
+    /*Director Section Start*/
+    .director-content{
+        padding: 170px 0;
+        height: auto;
+    }
+
 }
 @media (min-width: 1000px) {
     .arrow-img{
@@ -129,6 +168,18 @@
 }
 @media (min-width: 1280px) {
     .arrow-img{
-        margin: -50px 0;
+        margin: -63px 0;
+    }
+    #chart .arrow-img{
+        margin: -63px 0;
+    }
+
+}
+@media (min-height: 900px) {
+    .arrow-img{
+        margin: -93px 0;
+    }
+    #chart .arrow-img{
+        margin: -90px 0;
     }
 }
