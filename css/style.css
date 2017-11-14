@@ -280,8 +280,14 @@ p{
         z-index: 100;
         margin: -35px 0;
     }
+    .shade{
+        padding: 0;
+    }
     .chart-padding{
         padding: 95px 0;
+    }
+    .chart-padding .row{
+        margin-right: 0;
     }
     #chart .arrow-img{
         margin: -35px 0;
