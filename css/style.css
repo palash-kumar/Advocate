@@ -231,3 +231,115 @@ p{
     min-height: 100%;
     border-radius: 0;
 }
+/* Modal Components Start */
+.checkbox:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.checkbox {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #a9a9a9;
+    border-radius: .25em;
+    width: 1.3em;
+    height: 1.3em;
+    float: left;
+    margin-right: .5em;
+}
+.checkbox label{
+    width: 100%;
+}
+
+.checkbox .cr .cr-icon{
+    position: absolute;
+    font-size: .8em;
+    line-height: 0;
+    top: 50%;
+    left: 20%;
+}
+
+.checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox input[type="checkbox"] + .cr > .cr-icon {
+    transform: scale(3) rotateZ(-20deg);
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+
+.checkbox input[type="checkbox"]:checked + .cr > .cr-icon {
+    transform: scale(1) rotateZ(0deg);
+    opacity: 1;
+}
+
+.checkbox input[type="checkbox"]:disabled + .cr {
+    opacity: .5;
+}
+/* Checkbox End */
+
+.funkyradio div {
+    clear: both;
+    overflow: hidden;
+}
+/* Deals with checkbox container */
+.funkyradio label {
+    width: 2750px;
+    border-radius: 3px;
+    /*border: 1px solid #D1D3D4;*/
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.funkyradio input[type="checkbox"]:empty {
+    display: none;
+}
+
+.funkyradio input[type="checkbox"]:empty ~ label {
+    position: relative;
+    line-height: 2.0em;
+    text-indent: 3em;
+    margin-top: 2em;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.funkyradio input[type="checkbox"]:empty ~ label:before {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 2.5em;
+    /*background: #D1D3D4;*/
+    background: transparent;
+    border-radius: 3px 3px 3px 3px;
+    border-left: 1px solid crimson;
+    border-right: 1px solid crimson;
+}
+
+
+.funkyradio input[type="checkbox"]:checked ~ label:before {
+    content: '\2714';
+    text-indent: .9em;
+    font-size: 20px;
+    color: red;
+    /*background-color: #ccc;*/
+    background-color: transparent;
+    transition: all .3s ease-in;
+}
+
+.chkbox-padding{
+    margin-left: 20px;
+}
+.funkyradio .funkyradio-default input{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+/* Modal Components End */
