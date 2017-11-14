@@ -220,7 +220,7 @@ p{
     position: relative;
     line-height: 2.0em;
     text-indent: 3em;
-    margin-top: 2em;
+    margin-top: 1em;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -235,7 +235,7 @@ p{
     bottom: 0;
     left: 0;
     content: '';
-    width: 2.5em;
+    width: 2.0em;
     /*background: #D1D3D4;*/
     background: transparent;
     border-radius: 3px 3px 3px 3px;
@@ -246,7 +246,7 @@ p{
 /*ADD Transition*/
 .funkyradio input[type="checkbox"]:checked ~ label:before {
     content: '\2714';
-    text-indent: .9em;
+    text-indent: .5em;
     font-size: 20px;
     color: red;
     /*background-color: #ccc;*/
@@ -320,25 +320,21 @@ p{
         padding-left: 5px;
     }
     .funkyradio label{
-        font-size: 15px;
+        font-size: 13px;
         font-weight: 600;
     }
     .funkyradio input[type="checkbox"]:empty ~ label {
         position: relative;
         line-height: 2.0em;
-        text-indent: 3em;
-        margin-top: 2em;
+        text-indent: 2.6em;
+        margin-top: 1em;
     }
 
     /*ADD Transition*/
     .funkyradio input[type="checkbox"]:checked ~ label:before {
-        content: '\2714';
-        text-indent: 1.2em;
+        text-indent: 0.4em;
         font-size: 15px;
-        color: red;
-        /*background-color: #ccc;*/
-        background-color: transparent;
-        transition: all .3s ease-in;
+
     }
 }
 @media (min-width: 800px) {
