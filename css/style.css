@@ -108,6 +108,7 @@ p{
     margin: auto;
     background-color: transparent;
     border: none;
+    margin: 30px 0;
 }
 .card > img{
     max-height: 200px;
@@ -150,112 +151,175 @@ p{
     border-radius: 0;
 }
 
-/* Checkbox Start */
-.checkbox:after {
-    content: '';
-    display: table;
-    clear: both;
-}
-
-.checkbox {
-    position: relative;
-    display: inline-block;
-    border: 1px solid #a9a9a9;
-    border-radius: .25em;
-    width: 1.3em;
-    height: 1.3em;
-    float: left;
-    margin-right: .5em;
-}
-.checkbox label{
-    width: 100%;
-}
-
-.checkbox .cr .cr-icon{
-    position: absolute;
-    font-size: .8em;
-    line-height: 0;
-    top: 50%;
-    left: 20%;
-}
-
-.checkbox input[type="checkbox"] {
-    display: none;
-}
-
-.checkbox input[type="checkbox"] + .cr > .cr-icon {
-    transform: scale(3) rotateZ(-20deg);
+/*
+    INTRO SECTION START
+*/
+#quiz h4 {
+    font-family: "mrseaves";
+    font-size: 60px;
+    color: white;
     opacity: 0;
+}
+#response p,
+#quiz input,
+#quiz i,
+#section-quiz a:hover {
+    color: #721c24;
+    text-decoration: none;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
     transition: all .3s ease-in;
 }
-
-.checkbox input[type="checkbox"]:checked + .cr > .cr-icon {
-    transform: scale(1) rotateZ(0deg);
-    opacity: 1;
+#quiz input,
+#quiz i {
+    font-family: "hoefler-italic";
+    font-style: normal;
 }
-
-.checkbox input[type="checkbox"]:disabled + .cr {
-    opacity: .5;
+#quiz .clearfix {
+    margin: 40px 0;
 }
-/* Checkbox End */
-
-.funkyradio div {
-    clear: both;
-    overflow: hidden;
+#quiz h4,
+#quiz a,
+#quiz i,
+#quiz .quizquestion,
+#quiz .quizanswer {
+    display: inline;
+    padding-right: 20px;
 }
-/* Deals with checkbox container */
-.funkyradio label {
-    width: 2750px;
-    border-radius: 3px;
-    /*border: 1px solid #D1D3D4;*/
-    font-weight: 400;
-    font-size: 20px;
+#quiz p.quizquestion,
+#quiz p.quizanswer {
+    font-size: 33px;
 }
-
-.funkyradio input[type="checkbox"]:empty {
-    display: none;
-}
-
-.funkyradio input[type="checkbox"]:empty ~ label {
+#quiz input {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 50px;
+    width: 790px;
+    display: inline;
+    line-height: 50px;
     position: relative;
-    line-height: 2.0em;
-    text-indent: 3em;
-    margin-top: 1em;
+    top: -6px;
+}
+#response {
+    margin-top: 50px;
+    /*background: url(../images/modal_1.jpg)  no-repeat;*/
+}
+#response p {
+    color: crimson;
+    font-family: "mrseaves";
+    font-size: 22px;
+    padding-left: 120px;
+    margin: 0 0 10px;
+    line-height: 24px;
+}
+#response #enter h2 {
     cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+}
+.gecko #response #enter h2 a {
+    display: block;
+    font-weight: 600;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+#section-quiz{
+    background-color: #2e3133;
+}
+#response #enter h2:hover {
+    color: #446894;
+    cursor: pointer;
+}
+#section-quiz h1 {
+    color: white;
+}
+#section-quiz,
+#section-quiz h2 {
+    background-color: transparent;
+    background-position-y: top;
+    background-position-x: 50%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#section-quiz{
+    background: url("../images/modal_1.jpg") no-repeat;
+    background-size: cover;
+}
+#section-quiz.section {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 0;
+    height: 100%;
+}
+#section-quiz.section .branding {
+    margin-top: 60px;
+}
+#section-quiz hr {
+    margin-top: 50px;
+}
+#section-quiz .heading {
+    margin: 50px 0 ;
+}
+.masthead.skipper {
+    position: fixed;
+    bottom: 0;
+    height: 33px;
+}
+#section-quiz .masthead.skipper a {
+    display: block;
+    padding-top: 7px;
+}
+#section-quiz .masthead.skipper a:hover {
+    color: #404041;
 }
 
-.funkyradio input[type="checkbox"]:empty ~ label:before {
+.masthead.skipper a,
+ul li {
+    font-family: "knockout";
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.masthead {
+    background: #cdb08a;
+    height: 33px;
     position: absolute;
-    display: block;
-    top: 0;
     bottom: 0;
     left: 0;
-    content: '';
-    width: 2.0em;
-    /*background: #D1D3D4;*/
-    background: transparent;
-    border-radius: 3px 3px 3px 3px;
-    border-left: 1px solid crimson;
-    border-right: 1px solid crimson;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    -webkit-box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.5);
 }
-
-/*ADD Transition*/
-.funkyradio input[type="checkbox"]:checked ~ label:before {
-    content: '\2714';
-    text-indent: .5em;
-    font-size: 20px;
-    color: red;
-    /*background-color: #ccc;*/
-    background-color: transparent;
-    transition: all .3s ease-in;
+.masthead.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 999;
 }
-
-
-/*}*/
+.masthead.skipper {
+    position: fixed;
+    bottom: 0;
+    height: 33px;
+}
+#section-quiz, #section-quiz h2{
+    font-weight: 800;
+}
+.close {
+    padding-top: 50px;
+}
+/*
+    INTRO SECTION END
+*/
 
 .chkbox-padding{
     margin-left: 20px;
@@ -272,8 +336,26 @@ p{
     border-right: 1px solid black;
 }
 
+#quiz a{
+    color: crimson;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+.gecko #response #enter h2 a {
+    color: #721c24;
+}
+.gecko #response #enter h2 a:hover {
+    color: crimson;
+}
+#quiz h4 {
+    font-weight: 600;
+}
+
 /* MEDI@ Start */
-@media (min-width: 320px) {
+@media (min-width: 300px) {
     .arrow-img{
         width: 100%;
         position: absolute;
@@ -315,34 +397,52 @@ p{
     .chart-bottom{
         padding: 100px 0;
     }
-    .chkbox-padding{
-        margin-left: 2px;
-    }
-    .modal-content h2{
-        font-size: 20px;
-        font-weight: 600;
-    }
-    .modal-content .col-md-6{
-        padding-left: 5px;
-    }
-    .funkyradio label{
-        font-size: 13px;
-        font-weight: 600;
-    }
-    .funkyradio input[type="checkbox"]:empty ~ label {
-        position: relative;
-        line-height: 2.0em;
-        text-indent: 2.6em;
-        margin-top: 1em;
-    }
 
-    /*ADD Transition*/
-    .funkyradio input[type="checkbox"]:checked ~ label:before {
-        text-indent: 0.4em;
+    .gecko #response #enter h2 a {
+        font-size: 18px;
+    }
+    /*QUIZ*/
+    #section-quiz,
+    #quizes {
+        display: none;
+    }
+    #quiz{
+        padding: 0 10px;
+    }
+    #quiz a{
+        font-size: 12px;
+        padding: 0 30px;
+    }
+    #section-quiz h1#partypooper {
+        font-size: 1px;
+        text-indent: -6000px;
+        display: block;
+        height: auto;
+        margin-top: 20px;
+    }
+    #section-quiz h1#partypooper img {
+        margin-left: auto;
+        margin-right: auto;
+        clear: both;
+        display: block;
+    }
+    #quiz p.quizquestion, #quiz p.quizanswer {
         font-size: 15px;
-
+    }
+    #quiz h4 {
+        font-size: 13px;
+        font-weight: 400;
+    }
+    #quiz .clearfix {
+        margin: 20px 0;
+    }
+    #response p {
+        padding-left: 5px;
+        font-size: 18px;
     }
 }
+
+
 @media (min-width: 800px) {
     .arrow-img{
         margin: -50px 0;
@@ -373,28 +473,67 @@ p{
         font-size: 20px;
         font-weight: 700;
     }
-
-}
-@media (min-width: 1000px) {
     .arrow-img{
-        margin: -74px 0;
-    }
-}
-@media (min-width: 1280px) {
-    .arrow-img{
-        margin: -63px 0;
-    }
+         margin: -63px 0;
+     }
     #chart .arrow-img{
         margin: -63px 0;
     }
 
 }
-@media (min-height: 900px) {
+
+
+@media (min-width: 900px){
+    .content-top{
+        /*height: 800px;*/
+    }
+    .content-padding{
+        padding-top: 150px;
+    }
+    #quiz p.quizquestion, #quiz p.quizanswer {
+        font-size: 25px;
+    }
     .arrow-img{
-        margin: -93px 0;
+        margin: -63px 0;
     }
     #chart .arrow-img{
-        margin: -90px 0;
+        margin: -60px 0;
+    }
+    #quiz h4 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    #quiz a {
+         font-size: 25px;
+         padding: 0 30px;
+     }
+    #response p {
+        font-size: 25px;
+    }
+    .gecko #response #enter h2 a {
+        font-size: 30px;
+    }
+    .content-top{
+        height: 800px;
+    }
+    .director-content{
+        height: 600px;
+    }
+
+}
+@media (min-width: 900px) and (min-height: 900px) {
+    .arrow-img{
+        margin: -94px 0;
+    }
+    #chart .arrow-img{
+        margin: -94px 0;
+    }
+    .content-top{
+        height: 800px;
+    }
+    .director-content{
+        height: 600px;
     }
 }
+
 
