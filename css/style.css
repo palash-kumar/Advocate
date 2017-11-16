@@ -46,7 +46,7 @@ p{
 
 /*Content Section Start*/
 .content-top{
-    background: url("../images/content_1.jpg") no-repeat;
+    background: url("../images/content_1_1.jpg") no-repeat;
     -webkit-background-size:100% 100%;
     background-size:100% 100%;
 }
@@ -75,7 +75,7 @@ p{
 
 /*Director Section Start*/
 .director-content{
-    background: url("../images/Director_3_Slide.jpg") no-repeat;
+    background: url("../images/Director_3_1_Slide.jpg") no-repeat;
     -webkit-background-size:100% 100%;
     background-size:100% 100%;
     padding: 300px 0;
@@ -89,7 +89,7 @@ p{
     z-index: 100;
 }
 .chart-top{
-    background: url("../images/Director_chart_1_Slide.jpg") no-repeat;
+    background: url("../images/Director_chart_2_Slide.jpg") no-repeat;
     -webkit-background-size:100% 100%;
     background-size:100% 100%;
     padding: 300px 0;
@@ -133,7 +133,7 @@ p{
     padding-right: 0 !important;
 }
 .modal-content {
-    background: url("../images/modal_1.jpg") no-repeat;
+    /*background: url("../images/modal_1.jpg") no-repeat;*/
     -webkit-background-size:cover;
     background-size:cover;
 }
@@ -397,3 +397,4 @@ p{
         margin: -90px 0;
     }
 }
+
