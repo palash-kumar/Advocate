@@ -1,4 +1,7 @@
 /*Global Styles Start*/
+body{
+    color: #000;
+}
 p, h1, h2, h3, h4{
     text-align: center;
 }
@@ -35,6 +38,10 @@ p{
     color: #ffffff;
 }
 
+#inner{
+    margin: 20% 0 0 30%;
+}
+
 .arrow-img{
     width: 100%;
     max-height: 20%;
@@ -51,7 +58,7 @@ p{
     background-size:100% 100%;
 }
 #content .container-fluid {
-    width: 100%;
+    /*width: 100%;*/
     padding-right: 0;
     padding-left: 0;
     margin-right: auto;
@@ -164,7 +171,7 @@ p{
 #quiz input,
 #quiz i,
 #section-quiz a:hover {
-    color: #721c24;
+    color: #ffffff;
     text-decoration: none;
     -webkit-transition: all .3s ease-in;
     -moz-transition: all .3s ease-in;
@@ -174,6 +181,7 @@ p{
 }
 #quiz input,
 #quiz i {
+    color: #000000;
     font-family: "hoefler-italic";
     font-style: normal;
 }
@@ -203,12 +211,8 @@ p{
     position: relative;
     top: -6px;
 }
-#response {
-    margin-top: 50px;
-    /*background: url(../images/modal_1.jpg)  no-repeat;*/
-}
 #response p {
-    color: crimson;
+    color: #000000;
     font-family: "mrseaves";
     font-size: 22px;
     padding-left: 120px;
@@ -248,7 +252,7 @@ p{
     background-size: cover;
 }
 #section-quiz{
-    background: url("../images/modal_1.jpg") no-repeat;
+    /*background: url("../images/modal_1.jpg") no-repeat;*/
     background-size: cover;
 }
 #section-quiz.section {
@@ -269,14 +273,9 @@ p{
 #section-quiz .heading {
     margin: 50px 0 ;
 }
-.masthead.skipper {
-    position: fixed;
-    bottom: 0;
-    height: 33px;
-}
 #section-quiz .masthead.skipper a {
     display: block;
-    padding-top: 7px;
+    padding: 8px 0;
 }
 #section-quiz .masthead.skipper a:hover {
     color: #404041;
@@ -284,13 +283,17 @@ p{
 
 .masthead.skipper a,
 ul li {
+    color: #000;
     font-family: "knockout";
-    font-size: 20px;
+    font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+.masthead.skipper a, ul li {
+    color: #fff;
+}
 .masthead {
-    background: #cdb08a;
+    background: #4a5c6b;
     height: 33px;
     position: absolute;
     bottom: 0;
@@ -309,7 +312,7 @@ ul li {
 .masthead.skipper {
     position: fixed;
     bottom: 0;
-    height: 33px;
+    height: 40px;
 }
 #section-quiz, #section-quiz h2{
     font-weight: 800;
@@ -337,7 +340,7 @@ ul li {
 }
 
 #quiz a{
-    color: crimson;
+    color: #000;
     -webkit-transition: all .3s ease-in;
     -moz-transition: all .3s ease-in;
     -ms-transition: all .3s ease-in;
@@ -345,12 +348,13 @@ ul li {
     transition: all .3s ease-in;
 }
 .gecko #response #enter h2 a {
-    color: #721c24;
+    color: #000;
 }
 .gecko #response #enter h2 a:hover {
-    color: crimson;
+    color: #fff;
 }
 #quiz h4 {
+    color: #000;
     font-weight: 600;
 }
 
@@ -408,6 +412,7 @@ ul li {
     }
     #quiz{
         padding: 0 10px;
+        margin: auto;
     }
     #quiz a{
         font-size: 12px;
@@ -435,6 +440,9 @@ ul li {
     }
     #quiz .clearfix {
         margin: 20px 0;
+    }
+    #response {
+        margin-top: 50px;
     }
     #response p {
         padding-left: 5px;
@@ -478,6 +486,13 @@ ul li {
      }
     #chart .arrow-img{
         margin: -63px 0;
+    }
+    #response {
+        margin-top: 20%;
+    }
+    #quiz {
+        padding: 0 10px;
+        margin: 25% 0 0 30%;
     }
 
 }
