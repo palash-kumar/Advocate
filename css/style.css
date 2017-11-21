@@ -39,7 +39,7 @@ p{
 }
 
 #inner{
-    margin: 20% 0 0 30%;
+    margin: 10% 0 0 30%;
 }
 
 .arrow-img{
@@ -488,11 +488,11 @@ ul li {
         margin: -63px 0;
     }
     #response {
-        margin-top: 20%;
+        margin-top: 15%;
     }
     #quiz {
         padding: 0 10px;
-        margin: 20% 0 0 30%;
+        margin: 10% 0 0 30%;
     }
 
 }
